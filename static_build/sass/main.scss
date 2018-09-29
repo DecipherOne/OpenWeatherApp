@@ -1,0 +1,105 @@
+html, body
+{
+  width   : 100%;
+  margin  : 0;
+  padding : 0;
+  background-color:black;
+  font-size:18px;
+  font-family:Consolas,Terminal,Arial;
+}
+
+div
+{
+    padding:16px;
+}
+body
+{
+    background-color:#c2c2c2;
+}
+
+input
+{
+    padding: 1em;
+    margin-top: 10px;
+    clear: both;
+    margin-bottom: 10px;
+}
+
+.titleImage , #titleText
+{
+    font-size:32px;
+    float:left;
+    color: cornsilk;
+}
+
+#subTitleText
+{
+    color: cornsilk;
+    position: relative;
+    bottom: 35px;
+}
+
+.titleImage
+{
+    img
+    {
+        width:75px;
+        height:75px;
+    }
+
+}
+
+#headBanner, .formContainer
+{
+    width:485px;
+    min-height:72px;
+    text-align:center;
+    background: linear-gradient(to bottom, #1e5799 0%,#207cca 21%,#207cca 21%,#28335e 59%,#28335e 100%,#7db9e8 100%);
+    margin-left:28.5%;
+}
+
+.formContainer
+{
+    background: transparent;
+}
+
+#top
+{
+    background: linear-gradient(to bottom, #1e5799 0%,#207cca 21%,#207cca 21%,#28335e 59%,#28335e 100%,#7db9e8 100%);
+    min-height:75px;
+}
+
+footer
+{
+    background: linear-gradient(to top, #1e5799 0%,#207cca 21%,#207cca 21%,#28335e 59%,#28335e 100%,#7db9e8 100%);
+    min-height:75px;
+}
+
+#controls, #queryResults
+{
+    background-color:#28335e;
+}
+
+#requestWeatherForm
+{
+    background-color:#c2c2c2;
+    min-height:100px;
+    border-radius:3px;
+    align-content:center;
+    padding-bottom:20px;
+}
+
+.spacerText
+{
+    display:block;
+}
+
+#submitWeatherQuery
+{
+    display: block;
+    width: 185px;
+    height: 45px;
+    padding: 1em;
+    margin-left: 31%;
+}
+
