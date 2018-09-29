@@ -1,0 +1,10 @@
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID
+/node_modules
+/.sass-cache/bb9822a8a79c4c9ce19dda2ef08e8543817ff1d0/*.scssc

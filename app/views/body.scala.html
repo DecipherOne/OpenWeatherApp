@@ -1,0 +1,32 @@
+@(title: String)
+
+<section id="top">
+    <div id="headBanner">
+       <span class="titleImage">
+           <img src="@routes.Assets.versioned("images/rainCloud.gif")">
+       </span>
+        <span id="titleText">@title</span>
+        <span class="titleImage">
+            <img src="@routes.Assets.versioned("images/rainCloud.gif")">
+        </span>
+        <span id="subTitleText">Where are you going today?</span>
+    </div>
+</section>
+<section id="controls">
+    <div class="formContainer">
+        <form id="requestWeatherForm">
+            <input id="cityName" placeholder="Name of City" type="text" maxlength="50"/>
+            <span class="spacerText">Or</span>
+            <input id="cityZipCode" placeholder="Zip Code" type="text" pattern="[0-9]{5}" maxlength="5"/>
+            <button id="submitWeatherQuery">Submit</button>
+        </form>
+    </div>
+</section>
+<section id="queryResults">
+    <div id="currentWeather">
+
+    </div>
+    <div id="fiveDayWeather">
+
+    </div>
+</section>
