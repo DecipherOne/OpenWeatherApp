@@ -13,6 +13,7 @@ input { padding: 1em; margin-top: 10px; clear: both; margin-bottom: 10px; }
 .titleImage img { width: 75px; height: 75px; }
 
 #headBanner, .formContainer { width: 485px; min-height: 72px; text-align: center; background: linear-gradient(to bottom, #1e5799 0%, #207cca 21%, #207cca 21%, #28335e 59%, #28335e 100%, #7db9e8 100%); margin-left: 28.5%; }
+@media screen and (max-width: 720px) { #headBanner, .formContainer { margin-left: 12%; } }
 
 .formContainer { background: transparent; }
 
@@ -27,3 +28,8 @@ footer { background: linear-gradient(to top, #1e5799 0%, #207cca 21%, #207cca 21
 .spacerText { display: block; }
 
 #submitWeatherQuery { display: block; width: 185px; height: 45px; padding: 1em; margin-left: 31%; }
+
+#currentWeather { color: #d2ff64; display: inline-flex; margin-left: 28%; width: 320px; }
+@media screen and (max-width: 720px) { #currentWeather { margin-left: 12%; } }
+
+#weatherDataTable { color: #d2ff64; }
