@@ -27,3 +27,7 @@ footer { background: linear-gradient(to top, #1e5799 0%, #207cca 21%, #207cca 21
 .spacerText { display: block; }
 
 #submitWeatherQuery { display: block; width: 185px; height: 45px; padding: 1em; margin-left: 31%; }
+
+#currentWeather { color: #d2ff64; display: inline-flex; margin-left: 28%; width: 320px; }
+
+#weatherDataTable { color: #d2ff64; }

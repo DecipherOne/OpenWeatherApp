@@ -1,19 +1,13 @@
 package controllers
 
 import javax.inject.Inject
-
-import scala.concurrent.Future
 import scala.concurrent.duration._
 import scala.concurrent.ExecutionContext
 import play.api.mvc._
 import play.api.libs.ws._
-import play.api.libs.json
 import play.api.http.HttpEntity
-import akka.actor.ActorSystem
-import akka.stream.ActorMaterializer
-import akka.stream.scaladsl._
 import akka.util.ByteString
-import play.api.libs.json._
+
 
 class OpenWeatherQueryController @Inject()(cc: ControllerComponents,ws: WSClient, implicit val ec: ExecutionContext) extends AbstractController(cc) {
 
@@ -25,7 +19,7 @@ class OpenWeatherQueryController @Inject()(cc: ControllerComponents,ws: WSClient
 
     val param: String = "?q="
     val cityName = request.queryString("cityName")
-    val requestString: String = "https://api.openweathermap.org/data/2.5/weather" + param + cityName(0) + "&appid=" + apiKey
+    val requestString: String = "https://api.openweathermap.org/data/2.5/weather" + param + cityName(0) +"&units=imperial" + "&appid=" + apiKey
     val currentWeatherRequest: WSRequest = ws.url(requestString).withRequestTimeout(7 seconds)
 
     currentWeatherRequest.get().map { response =>
