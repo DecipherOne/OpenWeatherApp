@@ -12,3 +12,7 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 #Body file
 
 GET /body        controllers.BodyController.body
+
+#Query Weather Service
+
+GET /weather     controllers.OpenWeatherQueryController.RequestCurrentWeatherByCityName
